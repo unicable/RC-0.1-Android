@@ -135,25 +135,39 @@ $(document).ready(function(){
 		
 		var url = "http://webservices.radiocityfm.com/enviar-pedido.php";
 		$.ajax({
-			   type: "POST",
-			   url: url,
-			   data: $("#pedido").serialize(), // serializes the form's elements.
-			   success: function(data)
-			   {
-					if (data == "true") 
-					{
-						$('#limensaje').hide().delay(800).show();
-						$("#mensaje-enviado").css("color","#399");
-				   		$("#mensaje-enviado").html('Tu mensaje ha sido enviado.');						
-					}
-					else
-					{
-						$("#mensaje-enviado").css("color","#C00");
-						$("#mensaje-enviado").html('Ocurrió un problema al enviar tu mensaje, intenta nuevamente en instantes.');						
-					}
-			   }
-			 });
+		   type: "POST",
+		   url: url,
+		   data: $("#pedido").serialize(), // serializes the form's elements.
+		   success: function(data)
+		   {
+				if (data == "true") 
+				{
+					$('#limensaje').hide().delay(800).show();
+					$("#mensaje-enviado").css("color","#399");
+					$("#mensaje-enviado").html('Tu mensaje ha sido enviado.');						
+				}
+				else
+				{
+					$("#mensaje-enviado").css("color","#C00");
+					$("#mensaje-enviado").html('Ocurrió un problema al enviar tu mensaje, intenta nuevamente en instantes.');						
+				}
+		   }
 		});
+	});
+	
+	function exitAppPopup() {
+		navigator.notification.confirm(
+			  'Salir de TodoJujuy.com?'
+			, function(button) {
+				  if (button == 2) {
+					  navigator.app.exitApp();
+				  }
+			  }
+			, 'Salir'
+			, 'No,Si'
+		);  
+		return false;
+	}
 });
 </script>
 <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
@@ -248,7 +262,7 @@ $("#jquery_jplayer_1").jPlayer({
             <div class="clear"></div>
              
             <div class="clear"></div>
-            <li><a href=""><i class="icon-remove-sign"></i> SALIR<span class="pull-right"><i class="icon-chevron-right"></i></span></a></li>
+            <li><a href="javascript:exitAppPopup();"><i class="icon-remove-sign"></i> SALIR<span class="pull-right"><i class="icon-chevron-right"></i></span></a></li>
             
           </ul>
   </div>
