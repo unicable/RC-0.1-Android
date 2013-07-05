@@ -374,7 +374,7 @@ audio
 	width:100%;
 	float:left;	
 }
-#label_nombre, #label_mensaje, #label_texto {
+#label_nombre, #label_email, #label_texto {
 	color:#313131;
 }
 #mensaje input[type=text]{

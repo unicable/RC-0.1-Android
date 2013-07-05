@@ -125,14 +125,17 @@ $(document).ready(function(){
 			return false;
 		}
 		else {
-			return IsEmail($("#email").val());
+			if (IsEmail($("#email").val()) == false) 
+			{
+				$("#label_email").html('Escribe un email válido.');
+				return false;				
+			}
 		}
 		if ($("#texto").val().length < 1) {
 			$("#label_texto").html('Escribe un mensaje.');
 			return false;			
 		}
-		$.post('enviar.php', $('#mensaje').serialize())
-		
+				
 		var url = "http://webservices.radiocityfm.com/enviar-pedido.php";
 		$.ajax({
 		   type: "POST",
