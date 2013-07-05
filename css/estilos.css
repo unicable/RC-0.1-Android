@@ -42,30 +42,6 @@ body{
 	top:0;
 }
 
-.sidebar form{
-	margin-bottom: 10px;
-}
-
-.sidebar .sidebar-dropdown{
-	display: none;
-}
-
-.sidebar .sidebar-dropdown a{
-	color: #fff;  
-	background: #c20d23 url("../img/red.png") repeat;
-	padding:6px;
-	text-transform: uppercase;
-	text-align: center;
-	font-size: 11px;
-	display: block;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #111;
-}
-
-.sidebar .sidebar-dropdown a:hover{
-	text-decoration: none;
-}
-
 .sidebar ul{
 	padding: 0px;
 	margin: 0px;
@@ -89,16 +65,6 @@ body{
   z-index: 60;
 }
 
-.sidebar .form-search{
-	z-index: 60;
-	padding: 5px 10px;
-	text-align: center;
-}
-
-.sidebar .s-widget{
-	z-index: 60;
-	padding: 10px 20px;
-}
 .sidebar #nav li i{
 	margin-right: 5px;
 }
@@ -156,30 +122,6 @@ body{
 
 .sidebar #nav li ul li a:hover {
   background: #0a0a0a; 
-}
-
-.sidebar .br-red{
-	border-left: 4px solid #ff3738;
-}
-
-.sidebar .br-blue{
-	border-left: 4px solid #1ba1e2;
-}
-
-.sidebar .br-orange{
-	border-left: 4px solid #f96b1e;
-}
-
-.sidebar .br-green{
-	border-left: 4px solid #2bec12;
-}
-
-.sidebar .br-purple{
-	border-left: 4px solid #e816dc;
-}
-
-.sidebar .br-yellow{
-	border-left: 4px solid #f4d710;
 }
 
 .sidebar .social{
@@ -363,7 +305,7 @@ audio
 	float:left;	
 }
 #mensaje .label {
-	clear:both;
+	
 	color:#313131;
 	line-height:15px;
 	font-size:11px;
