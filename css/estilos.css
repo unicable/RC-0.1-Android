@@ -359,3 +359,7 @@ audio
 	cursor:pointer;
 	color:#FFF;
 }
+#mensaje-enviado {
+	text-align:center;
+	font-size:12px;
+}
