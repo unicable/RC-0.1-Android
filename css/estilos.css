@@ -239,16 +239,123 @@ body{
 #facebookfeed .item {
 	margin:5px 0;
 	border: 1px solid #E9E9E9;
+	border-left:3px solid #4875B2;
 	background:#F5F5F5;
 	padding:5px;
 	width:100%;
 	float:left;
 }
 
+#twitterfeed {
+	padding:5px 0;
+	margin:0 auto;
+	width:95%;
+	font-size:12px;
+}
+#twitterfeed .titulo {
+	color:#00BBF3;
+	line-height:25px;
+	font-size:15px;
+	font-weight:700;
+	width:100%;
+	float:left;
+}
+#twitterfeed a {
+	text-decoration:none;
+	color:#333;
+}
+#twitterfeed .imagen {
+	width:130px;
+	height:100px;
+	overflow:hidden;
+	margin-right:6px;
+	float:left;
+}
+#twitterfeed .mensaje {
+	padding:5px;
+	float:left;
+}
+#twitterfeed .item {
+	margin:5px 0;
+	border: 1px solid #E9E9E9;
+	border-left:3px solid #00BBF3;
+	background:#F5F5F5;
+	padding:5px;
+	width:100%;
+	float:left;
+}
+audio
+{
+	width:100px;
+	-webkit-transition:all 0.5s linear;
+	-moz-transition:all 0.5s linear;
+	-o-transition:all 0.5s linear;
+	transition:all 0.5s linear;
+	-moz-box-shadow: 2px 2px 4px 0px #006773;
+	-webkit-box-shadow:  2px 2px 4px 0px #006773;
+	box-shadow: 2px 2px 4px 0px #006773;
+	-moz-border-radius:7px 7px 7px 7px ;
+	-webkit-border-radius:7px 7px 7px 7px ;
+	border-radius:7px 7px 7px 7px ;
+}
 #radio {
 	width:100%;
 	height:auto;
 	float:left;
 	position:relative;
 	text-align:center;
+}
+#mensaje {
+	padding:5px 0;
+	margin:0 auto;
+	width:95%;
+	font-size:12px;
+}
+#mensaje .titulo {
+	color:#C00;
+	line-height:25px;
+	font-size:15px;
+	font-weight:700;
+	width:100%;
+	float:left;	
+}
+#mensaje .label {
+	clear:both;
+	color:#313131;
+	line-height:15px;
+	font-size:11px;
+	text-transform:uppercase;
+	text-shadow:none;
+	font-weight:400;
+	background:none;
+	width:100%;
+	float:left;	
+}
+#mensaje input[type=text]{
+	width:100%;
+	border:1px solid #EAEAEA;
+	padding:5px 6px;
+	line-height:30px;
+	background-color:#F7F7F7;
+	border-left:3px solid #C00;
+}
+#mensaje textarea{
+	width:100%;
+	border:1px solid #EAEAEA;
+	padding:5px 6px;
+	line-height:30px;
+	background-color: #F7F7F7;
+	border-left:3px solid #C00;
+}
+#mensaje .boton_enviar {
+	line-height:30px;
+	padding:0 5px;
+	background-color:#313131;
+	color:#FFF;
+	float:left;
+	margin-bottom:5px;
+}
+#mensaje .boton_enviar:hover {
+	cursor:pointer;
+	color:#FFF;
 }
