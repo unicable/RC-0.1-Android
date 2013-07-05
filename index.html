@@ -115,7 +115,7 @@ $(document).ready(function(){
 		url: "http://webservices.radiocityfm.com/face.php?callback=?",
 		dataType : 'json',
 		success:function(data) {
-			var contenido = '<div class="titulo">Lo que pasa en facebook...</div>';
+			var contenido = '<div class="titulo">Lo que pasa en Facebook...</div>';
 		  	$.each(data.datos,function(index,value) {
 				var urlface = "''"+value.link+"'";	
 				if (value.link != '' && value.link != null)
@@ -227,11 +227,11 @@ $(document).ready(function(){
             </li>
 			<div class="clear"></div>
             <li id="linkfacebook"><a href="#"><i class="icon-facebook-sign"></i> FACEBOOK <span class="pull-right"><i class="icon-chevron-right"></i></span></a></li>
-            <div id="lifacebook" class="oculto">
+            <li id="lifacebook" class="oculto">
             	<div id="facebook">
                 	<div id="facebookfeed"></div>
                 </div>
-            </div>
+            </li>
             <div class="clear"></div>            
             <li id="linktwitter"><a href="#"><i class="icon-twitter-sign"></i> TWITTER <span class="pull-right"><i class="icon-chevron-right"></i></span></a></li>
             <div id="litwitter" class="oculto">
@@ -241,22 +241,22 @@ $(document).ready(function(){
             </div>
             <div class="clear"></div>                        
             <li id="linkmensaje"><a href="#"><i class="icon-comments"></i> ENVIAR MENSAJE  <span class="pull-right"><i class="icon-chevron-right"></i></span></a></li>
-            <div id="limensaje" class="oculto">
+            <li id="limensaje" class="oculto">
             	<div id="mensaje-enviado"></div>
             	<div id="mensaje">                	
                 	<div class="titulo">Escribínos</div>
                     <div class="label">Nombre</div>
                     <div id="label_nombre"></div>
                     <input type="text" id="nombre" name="nombre" />
-
+                    <div class="label">E-mail</div>
+                    <div id="label_email"></div>
+                    <input type="text" id="email" name="email" />
                     <div class="label">Mensaje</div>
                     <div id="label_texto"></div>
                     <textarea id="texto" name="texto"></textarea>
                     <div id="boton_enviar" class="boton_enviar">Enviar</div>  
                 </div>
-            </div>
-            <div class="clear"></div>
-             
+            </li>             
             <div class="clear"></div>
             <li><a href="javascript:exitAppPopup();"><i class="icon-remove-sign"></i> SALIR<span class="pull-right"><i class="icon-chevron-right"></i></span></a></li>
             
