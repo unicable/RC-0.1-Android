@@ -182,21 +182,25 @@ $(document).ready(function(){
 	//Enviamos mensaje
 	$("#boton_enviar").click(function() {		
 		if ($("#nombre").val().length < 1) {
+			$("#label_nombre").css("color","#C00");
 			$("#label_nombre").html('Escribe un nombre.');
 			return false;			
 		}
 		if ($("#email").val().length < 1) {
+			$("#label_email").css("color","#C00");
 			$("#label_email").html('Escribe un email.');
 			return false;
 		}
 		else {
 			if (IsEmail($("#email").val()) == false) 
 			{
+				$("#label_email").css("color","#C00");
 				$("#label_email").html('Escribe un email válido.');
 				return false;				
 			}
 		}
 		if ($("#texto").val().length < 1) {
+			$("#label_texto").css("color","#C00");
 			$("#label_texto").html('Escribe un mensaje.');
 			return false;			
 		}
