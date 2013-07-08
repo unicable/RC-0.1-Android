@@ -81,27 +81,6 @@ $('.slide-box-button').click(function() {
     }
 }); 
 
-/* Contact slider */
-
-$(document).ready(function(){
-  $(".cslider-btn").on('click',function(e){
-      e.preventDefault();
-
-      if(!$(this).prev().hasClass("open")) {
-        $(".cslider").slideDown(300);
-        $(".cslider").addClass("open");
-        $(this).children("i").removeClass().addClass("icon-angle-up");
-      }
-      
-      else if($(this).prev().hasClass("open")) {
-        $(".cslider").removeClass("open");
-        $(".cslider").slideUp(300);
-        $(this).children("i").removeClass().addClass("icon-angle-down");
-      }
-  });
-
-});
-
 /* Tab */
 
 $('#myTab a').click(function (e) {
@@ -133,41 +112,6 @@ $(document).ready(function(){
     });
 
   });
-});
-
-/* Flex Slider */
-
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "fade",
-    controlNav: false,
-    pauseOnHover: true,
-    slideshowSpeed: 5000,
-    animationSpeed: 2000
-  });
-});
-
-/* prettyPhoto Gallery */
-
-$(".prettyphoto").prettyPhoto({
-overlay_gallery: false, social_tools: false
-});
-
-
-/* Isotype */
-
-// cache container
-var $container = $('#gallery');
-// initialize isotope
-$container.isotope({
-  resizable : false
-});
-
-// filter items when filter link is clicked
-$('#filters a').click(function(){
-  var selector = $(this).attr('data-filter');
-  $container.isotope({ filter: selector });
-  return false;
 });
 
 /* Main page isotope */
