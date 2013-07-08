@@ -109,7 +109,8 @@ $(document).ready(function(){
 		dataType : 'json',
 		success:function(data) {
 			$('#programa').html(data.respData.nombre);
-			$('#imagen').html('<a href="http://radiocityfm.com/imagenes/100x90/programacion/'+data.respData.foto+'"><img src="http://radiocityfm.com/imagenes/100x90/programacion/'+data.respData.foto+'" /></a>');
+			if (data.respData.foto != '' && data.respData.foto != null)
+				$('#imagen').html('<img src="http://radiocityfm.com/imagenes/100x90/programacion/'+data.respData.foto+'" />');
 			$('#conduce').html(data.respData.conduce);
 			$('#horario').html(' de '+data.respData.desde+' a '+data.respData.hasta);
 	  	},
